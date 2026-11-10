@@ -1,5 +1,5 @@
 {
-  "name": "shapy",
+  "name": "@bytonuzzz/shapy",
   "version": "0.1.0",
   "description": "Seeded geometric SVG avatars for React, plus an avatar picker. Same text, same avatar, every time.",
   "type": "module",

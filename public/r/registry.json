@@ -1,0 +1,33 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "shapy",
+  "homepage": "https://github.com/bytonuzzz/shapy",
+  "items": [
+    {
+      "name": "avatar",
+      "type": "registry:ui",
+      "title": "Shapy Avatar",
+      "description": "Seeded geometric SVG avatar. Same text, same avatar, every time.",
+      "dependencies": ["@bytonuzzz/shapy"],
+      "files": [
+        {
+          "path": "registry/shapy-avatar.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "picker",
+      "type": "registry:ui",
+      "title": "Shapy Avatar Picker",
+      "description": "Honeycomb avatar picker with shuffle, shape, colors, and background controls.",
+      "dependencies": ["@bytonuzzz/shapy"],
+      "files": [
+        {
+          "path": "registry/shapy-picker.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    }
+  ]
+}

@@ -7,13 +7,13 @@ Pass in a name, an email, an ID, or any other text, and get back an SVG. shapy h
 ## Install
 
 ```sh
-npm install shapy
+npm install @bytonuzzz/shapy
 ```
 
 ## Quick start
 
 ```js
-import { createAvatar, avatarDataUri } from 'shapy';
+import { createAvatar, avatarDataUri } from '@bytonuzzz/shapy';
 
 el.innerHTML = createAvatar('maya@notemap.com');
 img.src = avatarDataUri('maya@notemap.com');
@@ -50,7 +50,7 @@ createAvatar('maya@notemap.com', { background: 'ring' });
 `buildAvatar` returns what was drawn as well as the SVG:
 
 ```js
-import { buildAvatar } from 'shapy';
+import { buildAvatar } from '@bytonuzzz/shapy';
 
 const { svg, glyph, background, palette } = buildAvatar(user.id);
 ```
@@ -59,12 +59,12 @@ const { svg, glyph, background, palette } = buildAvatar(user.id);
 
 ## React
 
-The React components come with the same package, from `shapy/react`. They need React 18 or newer. If you only import from `shapy`, React isn't needed at all.
+The React components come with the same package, from `@bytonuzzz/shapy/react`. They need React 18 or newer. If you only import from `@bytonuzzz/shapy`, React isn't needed at all.
 
 ### Avatar
 
 ```jsx
-import { Avatar } from 'shapy/react';
+import { Avatar } from '@bytonuzzz/shapy/react';
 
 <Avatar value="maya@notemap.com" size={64} />
 <Avatar value="maya@notemap.com" size={40} />
@@ -86,7 +86,7 @@ The colors and shapes inside are part of the SVG, so you change them with the op
 ### AvatarPicker
 
 ```jsx
-import { AvatarPicker } from 'shapy/react';
+import { AvatarPicker } from '@bytonuzzz/shapy/react';
 
 <AvatarPicker
   defaultValue={user.avatar ?? user.id}
@@ -160,7 +160,7 @@ import {
   AvatarPickerNewBackground,
   AvatarPickerReset,
   useAvatarPicker,
-} from 'shapy/react';
+} from '@bytonuzzz/shapy/react';
 
 function SaveButton() {
   const { value } = useAvatarPicker();
@@ -204,7 +204,7 @@ createAvatar(user.avatar ?? user.id);
 Building your own picker without React? `stringifySpec` makes the same strings and `parseSpec` reads them back:
 
 ```js
-import { stringifySpec, parseSpec } from 'shapy';
+import { stringifySpec, parseSpec } from '@bytonuzzz/shapy';
 
 const value = stringifySpec({ seed: 'maya', background: 'ring' });
 parseSpec(value); // { seed: 'maya', background: 'ring' }
@@ -234,11 +234,11 @@ The picker honeycomb is a keyboard-accessible group: arrow keys move between ava
 
 ## TypeScript
 
-Types ship with the package for the root entry and for `shapy/react`.
+Types ship with the package for the root entry and for `@bytonuzzz/shapy/react`.
 
 ```ts
-import { createAvatar, type AvatarOptions, type GlyphName } from 'shapy';
-import { Avatar, type AvatarProps } from 'shapy/react';
+import { createAvatar, type AvatarOptions, type GlyphName } from '@bytonuzzz/shapy';
+import { Avatar, type AvatarProps } from '@bytonuzzz/shapy/react';
 ```
 
 ## License

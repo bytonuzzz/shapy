@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "avatar",
+  "title": "Shapy Avatar",
+  "description": "Seeded geometric SVG avatar. Same text, same avatar, every time.",
+  "dependencies": [
+    "@bytonuzzz/shapy"
+  ],
+  "files": [
+    {
+      "path": "registry/shapy-avatar.tsx",
+      "content": "\"use client\"\n\nexport { Avatar, type AvatarProps } from \"@bytonuzzz/shapy/react\"\n",
+      "type": "registry:ui"
+    }
+  ],
+  "type": "registry:ui"
+}

@@ -1,6 +1,6 @@
 {
   "name": "@tonuzzz/shapy",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Seeded geometric SVG avatars for React, plus an avatar picker. Same text, same avatar, every time.",
   "type": "module",
   "main": "./dist/index.cjs",

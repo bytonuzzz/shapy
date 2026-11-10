@@ -244,20 +244,30 @@ import { Avatar, type AvatarProps } from '@tonuzzz/shapy/react';
 
 ## Install with shadcn
 
-shapy also ships a shadcn registry for the avatar component and the picker. In a project already set up with shadcn, add the built items from a local checkout of this repo:
+shapy ships a shadcn registry for the avatar component and the picker. In a project already set up with shadcn, add the `@tonuzzz` registry to your `components.json`:
 
-```sh
-npx shadcn@latest add ./public/r/avatar.json
-npx shadcn@latest add ./public/r/picker.json
+```json
+{
+  "registries": {
+    "@tonuzzz": "https://bytonuzzz.github.io/shapy/r/{name}.json"
+  }
+}
 ```
 
-That writes `src/components/ui/shapy-avatar.tsx` and `src/components/ui/shapy-picker.tsx`, and installs `@tonuzzz/shapy`.
-
-A public hosted registry URL is not available yet. GitHub Pages cannot be enabled on this private repository on the current plan, and Vercel is not logged in. After the `public/` folder is hosted, the commands are:
+Then add the components:
 
 ```sh
-npx shadcn@latest add https://<host>/r/avatar.json
-npx shadcn@latest add https://<host>/r/picker.json
+npx shadcn@latest add @tonuzzz/avatar
+npx shadcn@latest add @tonuzzz/picker
+```
+
+That writes `components/ui/shapy-avatar.tsx` and `components/ui/shapy-picker.tsx`, and installs `@tonuzzz/shapy`.
+
+You can also add them by full URL, with no config:
+
+```sh
+npx shadcn@latest add https://bytonuzzz.github.io/shapy/r/avatar.json
+npx shadcn@latest add https://bytonuzzz.github.io/shapy/r/picker.json
 ```
 
 To rebuild the registry after changing files in `registry/`:

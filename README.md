@@ -241,6 +241,31 @@ import { createAvatar, type AvatarOptions, type GlyphName } from '@bytonuzzz/sha
 import { Avatar, type AvatarProps } from '@bytonuzzz/shapy/react';
 ```
 
+
+## Install with shadcn
+
+shapy also ships a shadcn registry for the avatar component and the picker. In a project already set up with shadcn, add the built items from a local checkout of this repo:
+
+```sh
+npx shadcn@latest add ./public/r/avatar.json
+npx shadcn@latest add ./public/r/picker.json
+```
+
+That writes `src/components/ui/shapy-avatar.tsx` and `src/components/ui/shapy-picker.tsx`, and installs `@bytonuzzz/shapy`.
+
+A public hosted registry URL is not available yet. GitHub Pages cannot be enabled on this private repository on the current plan, and Vercel is not logged in. After the `public/` folder is hosted, the commands are:
+
+```sh
+npx shadcn@latest add https://<host>/r/avatar.json
+npx shadcn@latest add https://<host>/r/picker.json
+```
+
+To rebuild the registry after changing files in `registry/`:
+
+```sh
+npx shadcn@latest build
+```
+
 ## License
 
 MIT

@@ -8,7 +8,7 @@
       "type": "registry:ui",
       "title": "Shapy Avatar",
       "description": "Seeded geometric SVG avatar. Same text, same avatar, every time.",
-      "dependencies": ["@bytonuzzz/shapy"],
+      "dependencies": ["@tonuzzz/shapy"],
       "files": [
         {
           "path": "registry/shapy-avatar.tsx",
@@ -21,7 +21,7 @@
       "type": "registry:ui",
       "title": "Shapy Avatar Picker",
       "description": "Honeycomb avatar picker with shuffle, shape, colors, and background controls.",
-      "dependencies": ["@bytonuzzz/shapy"],
+      "dependencies": ["@tonuzzz/shapy"],
       "files": [
         {
           "path": "registry/shapy-picker.tsx",

@@ -17,4 +17,4 @@ export {
   type AvatarPickerButtonProps,
   type AvatarPickerPreviewProps,
   type AvatarPickerState,
-} from "@bytonuzzz/shapy/react"
+} from "@tonuzzz/shapy/react"

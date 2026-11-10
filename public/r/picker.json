@@ -4,12 +4,12 @@
   "title": "Shapy Avatar Picker",
   "description": "Honeycomb avatar picker with shuffle, shape, colors, and background controls.",
   "dependencies": [
-    "@bytonuzzz/shapy"
+    "@tonuzzz/shapy"
   ],
   "files": [
     {
       "path": "registry/shapy-picker.tsx",
-      "content": "\"use client\"\n\nexport {\n  AvatarPicker,\n  AvatarPickerRoot,\n  AvatarPickerHoneycomb,\n  AvatarPickerPreview,\n  AvatarPickerShuffle,\n  AvatarPickerNewShape,\n  AvatarPickerNewColors,\n  AvatarPickerNewBackground,\n  AvatarPickerReset,\n  useAvatarPicker,\n  type AvatarPickerProps,\n  type AvatarPickerRootProps,\n  type AvatarPickerHoneycombProps,\n  type AvatarPickerButtonProps,\n  type AvatarPickerPreviewProps,\n  type AvatarPickerState,\n} from \"@bytonuzzz/shapy/react\"\n",
+      "content": "\"use client\"\n\nexport {\n  AvatarPicker,\n  AvatarPickerRoot,\n  AvatarPickerHoneycomb,\n  AvatarPickerPreview,\n  AvatarPickerShuffle,\n  AvatarPickerNewShape,\n  AvatarPickerNewColors,\n  AvatarPickerNewBackground,\n  AvatarPickerReset,\n  useAvatarPicker,\n  type AvatarPickerProps,\n  type AvatarPickerRootProps,\n  type AvatarPickerHoneycombProps,\n  type AvatarPickerButtonProps,\n  type AvatarPickerPreviewProps,\n  type AvatarPickerState,\n} from \"@tonuzzz/shapy/react\"\n",
       "type": "registry:ui"
     }
   ],

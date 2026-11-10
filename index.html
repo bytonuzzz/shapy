@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>shapy registry</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body { font: 16px/1.5 system-ui, sans-serif; max-width: 44rem; margin: 3rem auto; padding: 0 1.25rem; }
+    code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.92em; }
+    pre { background: color-mix(in oklab, CanvasText 8%, Canvas); padding: 0.9rem 1rem; border-radius: 10px; overflow: auto; }
+    a { color: inherit; }
+    h1 { letter-spacing: -0.03em; margin-bottom: 0.4rem; }
+    p.lead { opacity: 0.75; margin-top: 0; }
+  </style>
+</head>
+<body>
+  <h1>shapy</h1>
+  <p class="lead">Seeded geometric SVG avatars for React, plus an avatar picker. shadcn registry.</p>
+  <h2>Install with shadcn</h2>
+  <pre><code id="cmds">npx shadcn@latest add ./r/avatar.json
+npx shadcn@latest add ./r/picker.json</code></pre>
+  <p>Or install the library directly:</p>
+  <pre><code>npm install @tonuzzz/shapy</code></pre>
+  <p>
+    <a href="./r/registry.json">registry.json</a> ·
+    <a href="./r/avatar.json">avatar.json</a> ·
+    <a href="./r/picker.json">picker.json</a> ·
+    <a href="https://github.com/bytonuzzz/shapy">GitHub</a> ·
+    <a href="https://www.npmjs.com/package/@tonuzzz/shapy">npm</a>
+  </p>
+  <script>
+    const base = location.origin + location.pathname.replace(/\/index\.html$/, "").replace(/\/$/, "");
+    document.getElementById("cmds").textContent =
+      "npx shadcn@latest add " + base + "/r/avatar.json\n" +
+      "npx shadcn@latest add " + base + "/r/picker.json";
+  </script>
+</body>
+</html>
